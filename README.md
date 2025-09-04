@@ -33,4 +33,13 @@
 
 ![alt text](image-10.png) Creación del contenedor interactivo, creación y listado de archivos existentes.
 
-![alt text](image-11.png) Eliminación del contenedor, creación de un nuevo contenedor con la misma imagen y listado del contenido.
+![alt text](image-11.png) Eliminación del contenedor, creación de un nuevo 
+
+contenedor con la misma imagen y listado del contenido.
+No seguardó `notas.txt` ya que el contenedor no estaba asociado a un volumen, por lo cual no puede haber persistencia, `mensaje.txt` sigue existiendo porque está creado en el host y la imagen al compilar copia este archivo al directorio `app/`.
+
+**Ejercicio 5.**
+
+![alt text](image-14.png) Creación Dockerfile y compilación imagen personalizada con Redis, luego ejecución en segundo plano del contenedor.
+
+![alt text](image-15.png) Logs del contenedor.
